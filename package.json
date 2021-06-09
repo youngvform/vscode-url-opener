@@ -1,7 +1,7 @@
 {
   "name": "url-opener",
   "displayName": "url-opener",
-  "description": "Open an URL!",
+  "description": "Open a URL!",
   "icon": "images/logo.png",
   "version": "0.0.1",
   "engines": {
@@ -11,34 +11,66 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:url-opener.openAnUrl",
-    "onCommand:url-opener.openAnSelectedUrl"
+    "onCommand:url-opener.openUrl",
+    "onCommand:url-opener.openSelectedUrl",
+    "onCommand:url-opener.searchKeyword",
+    "onCommand:url-opener.searchSelectedKeyword"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "url-opener.openAnUrl",
-        "title": "Open an url",
+        "command": "url-opener.openUrl",
+        "title": "Open a url",
         "category": "URL Opener"
       },
       {
-        "command": "url-opener.openAnSelectedUrl",
-        "title": "Open an selected url",
+        "command": "url-opener.openSelectedUrl",
+        "title": "Open a selected url",
+        "category": "URL Opener"
+      },
+      {
+        "command": "url-opener.searchKeyword",
+        "title": "Search keywords",
+        "category": "URL Opener"
+      },
+      {
+        "command": "url-opener.searchSelectedKeyword",
+        "title": "Search selected keywords",
         "category": "URL Opener"
       }
     ],
+    "configuration": {
+      "type": "object",
+      "title": "URL Opener",
+      "properties": {
+        "url-opener.defaultSearchUrl": {
+          "type": "string",
+          "default": "https://www.google.com/search?q=",
+          "description": "Set custom search engine url (default is google)"
+        }
+      }
+    },
     "menus": {
       "commandPalette": [
         {
-          "command": "url-opener.openAnSelectedUrl",
+          "command": "url-opener.openSelectedUrl",
+          "when": "false"
+        },
+        {
+          "command": "url-opener.searchSelectedKeyword",
           "when": "false"
         }
       ],
       "editor/context": [
         {
           "when": "editorHasSelection",
-          "command": "url-opener.openAnSelectedUrl",
+          "command": "url-opener.openSelectedUrl",
+          "group": "url-opener"
+        },
+        {
+          "when": "editorHasSelection",
+          "command": "url-opener.searchSelectedKeyword",
           "group": "url-opener"
         }
       ]
