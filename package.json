@@ -1,7 +1,11 @@
 {
   "name": "url-opener",
-  "displayName": "url-opener",
-  "description": "Open a URL!",
+  "displayName": "URL Opener",
+  "description": "Open a URL or keyword!",
+  "publisher": "Young-Vform",
+  "repository": {
+    "url": "https://github.com/youngvform/vscode-url-opener"
+  },
   "icon": "images/logo.png",
   "version": "0.0.1",
   "engines": {
