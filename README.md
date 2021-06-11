@@ -13,9 +13,8 @@ Open a URL or search keywords by a default web browser
 2. Search keywords: if you type keywords, it would search keywords by a default browser.
 <br />(default search engine is google)
 <br />
-<br />
-### [Context menu]   
 
+### [Context menu]   
 ![context_menu](./images/context_menu.png)
 1. select a url or keywords.
 2. right click.
@@ -23,8 +22,7 @@ Open a URL or search keywords by a default web browser
 4. Search selected keywords: it would search keywords by a default browser.
 <br /> (default search engine is google)
 <br />
-<br />
-## Search engine setting
 
+## Search engine setting
 ![context_menu](./images/setting.png)
 You can change search engine url in the setting
