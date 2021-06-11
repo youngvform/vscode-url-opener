@@ -4,6 +4,10 @@ All notable changes to the "url-opener" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## [0.0.1]
 
 - Initial release
+
+## [0.0.2] - 2021-06-12
+
+- Update README
