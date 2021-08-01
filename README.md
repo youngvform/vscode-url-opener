@@ -3,6 +3,7 @@
 [Download](https://marketplace.visualstudio.com/items?itemName=Young-Vform.url-opener)
 
 Open a URL or search keywords by a default web browser
+![pallet](./images/pallet.gif)
 
 ## Usage
 

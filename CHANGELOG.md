@@ -11,3 +11,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [0.0.2] - 2021-06-12
 
 - Update README
+## [0.0.2] - 2021-08-01
+
+- add a gif to README
